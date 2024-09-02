@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "d861d0aa19b4ecc0",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb29c11924eba310",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2bea5111ad193e20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/tasks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "50bd46a730bbc2f3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "docs/Drawing 2024-09-02 19.46.15.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1fb8cd330a664685",
+    "type": "split",
+    "children": [
+      {
+        "id": "9dfd7b557240127b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11eae1bfd1e25ff8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c3d38e60bb0b18f4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9fc80ef45c27740a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2d18fcaf86eb8b99",
+    "type": "split",
+    "children": [
+      {
+        "id": "d119a35377ed3cc4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d2eeea677ef894c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/tasks.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "17c8c5a1a1096475",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/tasks.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ed6aacbef60d4f21",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "597810484db1f31b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/tasks.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "2bea5111ad193e20",
+  "lastOpenFiles": [
+    "docs/Drawing 2024-09-02 19.46.15.excalidraw.md",
+    "scenes/gameplay/gameplay.tscn~RF613e9fae.TMP",
+    "scenes/gameplay/gamA01B.tmp",
+    "Pasted Image 20240902203126_507.png.import",
+    "Pasted Image 20240902203126_507.png",
+    "docs/links.md",
+    "docs/tasks.md",
+    "project.godot~RF612ec96b.TMP",
+    "proC996.tmp",
+    "project.godot~RF612ea190.TMP",
+    "proA1AA.tmp",
+    "scenes/gameplay/gameplay.tscn",
+    "scenes/gameplay",
+    "scenes",
+    "icon.svg",
+    "docs/Untitled.canvas"
+  ]
+}
