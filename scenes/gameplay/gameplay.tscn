@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ds2vqkkpddfhx"]
+[gd_scene load_steps=4 format=3 uid="uid://ds2vqkkpddfhx"]
+
+[ext_resource type="PackedScene" uid="uid://u2sb4w767xos" path="res://scenes/paddle/paddle.tscn" id="1_ipb4t"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_d81yk"]
 normal = Vector2(0, 1)
@@ -154,13 +156,20 @@ offset_right = 5.0
 offset_bottom = 768.0
 grow_horizontal = 2
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="boundaries" type="Node" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="top" type="StaticBody2D" parent="boundaries"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/top"]
 shape = SubResource("WorldBoundaryShape2D_d81yk")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="bottom" type="StaticBody2D" parent="boundaries"]
 position = Vector2(0, 768)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundaries/bottom"]
 shape = SubResource("WorldBoundaryShape2D_6b45p")
+
+[node name="red" parent="." instance=ExtResource("1_ipb4t")]
+
+[node name="blu" parent="." instance=ExtResource("1_ipb4t")]
+type = 1

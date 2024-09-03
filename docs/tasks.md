@@ -1,8 +1,16 @@
 - [x] Create an arena with two walls and a divider
-- [ ] Add a paddle on either end of the play field. Use player inputs to move the paddles up and down
+- [x] Add a paddle on either end of the play field. Use player inputs to move the paddles up and down
+	- [x] determine type of paddle (red/blu)
+	- [x] setup according to the type of paddle
+		- [x] sprite
+		- [x] position
+	- [x] process input according to the type of paddle
+		- [x] blu - wasd
+		- [x] red - arrows
 - [ ] Add a ball that moves around the playfield and bounces off of the paddles and walls
 - [ ] Detect when the ball leaves the playfield. Assign a point to the player who scored
 - [ ] Track and display the score for each player
 - [ ] Victory condition: 11 points
 - [ ] Add a menu and allow the player to reset the game
 - [ ] Add some basic sounds. Play a sound every time the ball collides with something, and every time a player scores
+- [ ] Add momentum to paddles
