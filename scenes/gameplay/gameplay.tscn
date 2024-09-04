@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ds2vqkkpddfhx"]
+[gd_scene load_steps=5 format=3 uid="uid://ds2vqkkpddfhx"]
 
 [ext_resource type="PackedScene" uid="uid://u2sb4w767xos" path="res://scenes/paddle/paddle.tscn" id="1_ipb4t"]
+[ext_resource type="PackedScene" uid="uid://d2kybjnkd6drj" path="res://scenes/spawner/spawner.tscn" id="2_3apru"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_d81yk"]
 normal = Vector2(0, 1)
@@ -173,3 +174,5 @@ shape = SubResource("WorldBoundaryShape2D_6b45p")
 
 [node name="blu" parent="." instance=ExtResource("1_ipb4t")]
 type = 1
+
+[node name="Spawner" parent="." instance=ExtResource("2_3apru")]
