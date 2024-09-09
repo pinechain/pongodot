@@ -9,13 +9,13 @@
 		- [x] red - arrows
 - [ ] Add a ball that moves around the playfield and bounces off of the paddles and walls
 	- [ ] Create ball
-		- [ ] Create ball states (spawn/gameplay)
-		- [ ] Modify ball speed according current state
-	- [ ] Create spawner
+		- [ ] Create ball states (idle/spawn/gameplay)
+		- [ ] Modify ball speed according current state (0, 1x, 2x)
+	- [x] Create spawner
 		- [x] Create spawner states (idle/active)
-		- [ ] When switching to active:
+		- [x] When switching to active:
 			- [x] Choose random height
-			- [ ] Choose left or right (at the beginning it will always be left)
+			- [x] Choose left or right (at the beginning it will always be left)
 - [ ] Detect when the ball leaves the playfield. Assign a point to the player who scored
 - [ ] Track and display the score for each player
 - [ ] Victory condition: 11 points

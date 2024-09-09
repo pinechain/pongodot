@@ -50,7 +50,7 @@ func _process_blu_input():
 
 
 func _move_up():
-	velocity.y -= 1
+	velocity.y = -1
 	velocity *= speed
 
 
