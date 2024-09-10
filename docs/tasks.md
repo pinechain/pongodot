@@ -7,10 +7,10 @@
 	- [x] process input according to the type of paddle
 		- [x] blu - wasd
 		- [x] red - arrows
-- [ ] Add a ball that moves around the playfield and bounces off of the paddles and walls
-	- [ ] Create ball
-		- [ ] Create ball states (idle/spawn/gameplay)
-		- [ ] Modify ball speed according current state (0, 1x, 2x)
+- [x] Add a ball that moves around the playfield and bounces off of the paddles and walls
+- [x] Create ball
+	- [x] Create ball states (idle/spawn/gameplay)
+	- [x] Modify ball speed according current state (0, 1x, 2x)
 	- [x] Create spawner
 		- [x] Create spawner states (idle/active)
 		- [x] When switching to active:

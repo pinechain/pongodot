@@ -4,10 +4,10 @@
 [ext_resource type="Script" path="res://scenes/paddle/paddle.gd" id="1_qxkn2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_58f1b"]
-size = Vector2(20, 120)
 
-[node name="Paddle" type="CharacterBody2D"]
+[node name="Paddle" type="CharacterBody2D" groups=["paddle"]]
 position = Vector2(100, 10)
+collision_mask = 0
 script = ExtResource("1_qxkn2")
 
 [node name="collider" type="CollisionShape2D" parent="."]
