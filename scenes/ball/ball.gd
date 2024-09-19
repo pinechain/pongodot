@@ -19,8 +19,6 @@ func _ready():
 func _process(_delta):
 	if (Input.is_action_pressed("spawn")):
 		_vgl.on_spawn_requested()
-	if (Input.is_action_pressed("clear")):
-		_vgl.on_idle_requested()
 
 
 func _physics_process(delta):
