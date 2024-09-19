@@ -21,4 +21,6 @@
 - [x] Victory condition: 11 points
 - [ ] Add a menu and allow the player to reset the game
 - [ ] Add some basic sounds. Play a sound every time the ball collides with something, and every time a player scores
-- [ ] Add momentum to paddles
+- [ ] Add AI for single player game
+- [ ] Power-ups and mechanics
+	- [ ] 

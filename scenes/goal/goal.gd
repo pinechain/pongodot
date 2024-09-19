@@ -10,4 +10,4 @@ func _on_body_entered(_body:Node2D):
 		Globals.Side.LEFT:
 			EventBus.on_score.trigger(Globals.Side.RIGHT)
 		Globals.Side.RIGHT:
-			EventBus.on_score.trigger(Globals.Side.RIGHT)
+			EventBus.on_score.trigger(Globals.Side.LEFT)
