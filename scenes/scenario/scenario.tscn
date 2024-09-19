@@ -1,13 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://ds2vqkkpddfhx"]
+[gd_scene format=3 uid="uid://detoj8cvyjlj0"]
 
-[ext_resource type="PackedScene" uid="uid://u2sb4w767xos" path="res://scenes/paddle/paddle.tscn" id="1_ipb4t"]
-[ext_resource type="PackedScene" uid="uid://cyyqu4wt00yjn" path="res://scenes/goal/goal.tscn" id="1_r3cml"]
-[ext_resource type="PackedScene" uid="uid://2f4qkq6u4yab" path="res://scenes/boundaries/boundaries.tscn" id="2_3ytul"]
-[ext_resource type="PackedScene" uid="uid://dhr7wsvoreijr" path="res://scenes/ball/ball.tscn" id="2_fg1ce"]
-[ext_resource type="PackedScene" uid="uid://dfwbvgh3ey82b" path="res://scenes/arbiter/arbiter.tscn" id="6_422g7"]
-[ext_resource type="PackedScene" uid="uid://bspdofnamr8n3" path="res://scenes/hud/hud.tscn" id="8_5se00"]
-
-[node name="gameplay" type="Node2D"]
+[node name="scenario" type="Node"]
 
 [node name="background" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1366, 768)
@@ -155,32 +148,3 @@ offset_top = 728.0
 offset_right = 5.0
 offset_bottom = 768.0
 grow_horizontal = 2
-
-[node name="left_goal" parent="." instance=ExtResource("1_r3cml")]
-
-[node name="right_goal" parent="." instance=ExtResource("1_r3cml")]
-position = Vector2(1386, 384)
-side = 1
-
-[node name="red" parent="." instance=ExtResource("1_ipb4t")]
-position = Vector2(100, 200)
-
-[node name="blu" parent="." instance=ExtResource("1_ipb4t")]
-position = Vector2(1266, 200)
-side = 1
-
-[node name="ball" parent="." instance=ExtResource("2_fg1ce")]
-position = Vector2(683, 384)
-
-[node name="arbiter" parent="." instance=ExtResource("6_422g7")]
-
-[node name="boundaries" parent="." instance=ExtResource("2_3ytul")]
-
-[node name="hud" parent="." instance=ExtResource("8_5se00")]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 683.0
-offset_right = 683.0
