@@ -11,7 +11,8 @@ var _ball: Ball
 enum State {
 	IDLE,
 	SPAWNING,
-	PLAYING
+	PLAYING,
+	SCORING
 }
 
 
@@ -35,6 +36,14 @@ func on_play_requested():
 	if _current_state == State.SPAWNING:
 		_switch_state(State.PLAYING)
 		_ball.play()
+
+
+func on_score_requested(side: Globals.Side):
+	if _current_state == State.SPAWNING or _current_state == State.PLAYING:
+		_switch_state(State.SCORING)
+		_ball.change_spawn_direction(side)
+		on_idle_requested()
+		on_spawn_requested()
 
 
 func _switch_state(state: State):

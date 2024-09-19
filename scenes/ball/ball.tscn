@@ -5,7 +5,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jniaa"]
 
-[node name="ball" type="CharacterBody2D"]
+[node name="ball" type="CharacterBody2D" groups=["ball"]]
+visible = false
+collision_mask = 6
 script = ExtResource("1_o4uaj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

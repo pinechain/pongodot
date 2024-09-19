@@ -8,6 +8,12 @@ extends CharacterBody2D
 @onready var speed := original_speed
 
 @onready var _vgl := BallVGL.new(self)
+@onready var _spawn_direction := -1
+
+
+func _ready():
+	EventBus.on_score.sub(_vgl.on_score_requested)
+	EventBus.on_victory_reached.sub(_vgl.on_idle_requested)
 
 
 func _process(_delta):
@@ -18,14 +24,17 @@ func _process(_delta):
 
 
 func _physics_process(delta):
+	# Try to detect collision during movement
 	var collision_info = move_and_collide(velocity * delta)
 	
+	# Collision detected
 	if collision_info:
 		var colliding_object = collision_info.get_collider() as Node
 		if colliding_object.is_in_group("paddle"):
 			_vgl.on_play_requested()
 		
-		_bounce(collision_info)
+		# Bounce
+		velocity = velocity.bounce(collision_info.get_normal())
 
 
 func spawn():
@@ -39,18 +48,27 @@ func spawn():
 	var angle = randf_range(initial, final)
 
 	# Determine movement direction
-	velocity.x = -1 * speed
+	velocity.x = _spawn_direction * speed
 	velocity = velocity.rotated(angle)
+
+	# Enable visibility
+	visible = true
 
 
 func clear():
+	# Teleport outside of screen
 	velocity = Vector2.ZERO
 	global_position = Vector2(-50, -50)
 
 
 func play():
+	# Change to playing velocity
 	velocity.x *= 2
 
 
-func _bounce(collision_info: KinematicCollision2D):
-	velocity = velocity.bounce(collision_info.get_normal())
+func change_spawn_direction(direction: Globals.Side):
+	match direction:
+		Globals.Side.LEFT:
+			_spawn_direction = -1
+		Globals.Side.RIGHT:
+			_spawn_direction = 1
