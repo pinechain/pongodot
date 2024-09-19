@@ -1,25 +1,17 @@
 extends CharacterBody2D
 
 
-# TODO: Remove enum and use inheritance
-# Three children: Red, Blu, AI
-@export var type: PaddleType
+@export var side: Globals.Side
 @export var speed := 400.0
 
 
-enum PaddleType {
-	RED,
-	BLU
-}
-
-
 func _ready():
-	match type:
-		PaddleType.RED:
+	match side:
+		Globals.Side.LEFT:
 			global_position = Vector2(100, 364)
 			var sprite = load("res://scenes/paddle/red.png")
 			($sprite as Sprite2D).texture = sprite
-		PaddleType.BLU:
+		Globals.Side.RIGHT:
 			global_position = Vector2(1266, 364)
 			var sprite = load("res://scenes/paddle/blu.png")
 			($sprite as Sprite2D).texture = sprite
@@ -27,10 +19,10 @@ func _ready():
 
 func _process(_delta):
 	velocity = Vector2.ZERO
-	match type:
-		PaddleType.RED:
+	match side:
+		Globals.Side.LEFT:
 			_process_red_input()
-		PaddleType.BLU:
+		Globals.Side.RIGHT:
 			_process_blu_input()
 	move_and_slide()
 
