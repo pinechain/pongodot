@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bb29c11924eba310",
+        "id": "fd19d9064e6a6b2f",
         "type": "tabs",
         "children": [
           {
-            "id": "2bea5111ad193e20",
+            "id": "7c8325d214f25f35",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -16,16 +16,6 @@
                 "file": "docs/tasks.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "50bd46a730bbc2f3",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "docs/Drawing 2024-09-02 19.46.15.excalidraw.md"
               }
             }
           }
@@ -157,20 +147,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2bea5111ad193e20",
+  "active": "7c8325d214f25f35",
   "lastOpenFiles": [
-    "scenes/paddle/paddle.tscn~RF8a0a7080.TMP",
-    "scenes/paddle/pad726E.tmp",
-    "scenes/gameplay/gam1DD6.tmp",
-    "scenes/paddle/pad8BB.tmp",
-    "scenes/ball/bal3990.tmp",
-    "scenes/gameplay/gam3938.tmp",
-    "scenes/paddle/paddle.tscn~RF89fb1f7b.TMP",
-    "scenes/paddle/pad20D1.tmp",
-    "scenes/gameplay/gamF7FA.tmp",
-    "scenes/gameplay/gamAC55.tmp",
-    "scenes/paddle/paddle.tscn~RF89f89ab5.TMP",
+    "scenes/gameplay/gamF33A.tmp",
+    "scenes/gameplay/gam13F6.tmp",
+    "infra/event.gd",
+    "scenes/goal/right_goal.tscn",
+    "scenes/goal/left_goal.tscn",
+    "scenes/hud/hudEC2C.tmp",
+    "scenes/scenario/sceEC07.tmp",
+    "scenes/ball/balEBAF.tmp",
+    "scenes/gameplay/gamEB57.tmp",
+    "scenes/gameplay/gamE4AB.tmp",
+    "scenes/hud/hudFD22.tmp",
     "docs/Drawing 2024-09-02 19.46.15.excalidraw.md",
+    "Pasted Image 20240917200934_797.png",
+    "Pasted Image 20240911193305_897.png",
     "docs/tasks.md",
     "scenes/ball/ball.png",
     "scenes/paddle/red.png",

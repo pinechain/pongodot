@@ -16,9 +16,9 @@
 		- [x] When switching to active:
 			- [x] Choose random height
 			- [x] Choose left or right (at the beginning it will always be left)
-- [ ] Detect when the ball leaves the playfield. Assign a point to the player who scored
-- [ ] Track and display the score for each player
-- [ ] Victory condition: 11 points
+- [x] Detect when the ball leaves the playfield. Assign a point to the player who scored
+- [x] Track and display the score for each player
+- [x] Victory condition: 11 points
 - [ ] Add a menu and allow the player to reset the game
 - [ ] Add some basic sounds. Play a sound every time the ball collides with something, and every time a player scores
 - [ ] Add momentum to paddles
